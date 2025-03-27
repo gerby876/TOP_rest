@@ -25,6 +25,14 @@ body {
     margin-right: 5em;
 }
 
+ul {
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 0px;
+}
+
 .sidebar{
     background-color: black;
 }
