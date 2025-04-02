@@ -1,11 +1,19 @@
 import dish from "./images/maindish.jpg"
 
 const main = (function() {
-    const container=document.querySelector(".home");
+    const content=document.querySelector("#content");
     
+    const left=document.createElement("div");
+    left.classList="sidebar";
+    content.appendChild(left);
+
+    const container=document.createElement("div");
+    container.classList="home";
+    content.appendChild(container);
+
     const head=document.createElement("h1");
     head.textContent="A Culinary Journey to the Sea";
-    container.appendChild(head)
+    container.appendChild(head);
 
     const maindish=document.createElement("img");
     maindish.src=dish;
@@ -48,6 +56,9 @@ const main = (function() {
     user3.appendChild(comment3);
     container.appendChild(review3);
 
+    const right=document.createElement("div");
+    right.classList="sidebar";
+    content.appendChild(right);
 });
 
 export {main};

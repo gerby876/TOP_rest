@@ -1,13 +1,11 @@
 import "./style.css"
-
-
 import {main} from "./mainpage.js"
 
 
 const remove = (function() {
-   const container = document.querySelector(".home");
-   while (container.firstChild) {
-    container.removeChild(container.firstChild);
+   const clear = document.querySelector("#content");
+   while (clear.firstChild) {
+    clear.removeChild(clear.firstChild);
    };
 });
 
