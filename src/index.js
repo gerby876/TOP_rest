@@ -1,3 +1,14 @@
 import "./style.css"
 
-console.log("Hi")
+
+import test from "./mainpage.js"
+
+
+const dog = test("dog")
+
+dog.check()
+
+
+console.log("Outside update", dog.getTest1())
+
+
