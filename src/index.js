@@ -1,5 +1,7 @@
-import "./style.css"
-import {main} from "./mainpage.js"
+import "./style.css";
+import {main} from "./mainpage.js";
+import {menu} from "./menu.js";
+
 
 
 const remove = (function() {
@@ -22,6 +24,7 @@ const buttons = (function() {
 
     menu.addEventListener("click", () => {
         remove();
+        menu();
     });
 
     about.addEventListener("click", () => {
