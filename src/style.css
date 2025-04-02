@@ -73,3 +73,23 @@ ol{
 h1{
     align-self: center;
 }
+
+.leavereview{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+textarea {
+    min-height: 20em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.submit{
+    width: 10em;
+    height: 2em;
+    align-self: center;
+    margin-top: 1em;
+}

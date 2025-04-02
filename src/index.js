@@ -2,7 +2,8 @@ import "./style.css";
 
 import {main} from "./mainpage.js";
 import {menupage} from "./menu.js";
-import {aboutpage} from "./about.js"
+import {aboutpage} from "./about.js";
+import{reviewpage} from "./review.js"
 
 
 
@@ -37,5 +38,6 @@ const buttons = (function() {
 
     review.addEventListener("click", () => {
         remove();
+        reviewpage();
     });
 })();
