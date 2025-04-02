@@ -1,14 +1,36 @@
 import "./style.css"
 
 
-import test from "./mainpage.js"
+import {main} from "./mainpage.js"
 
 
-const dog = test("dog")
+const remove = (function() {
+   const container = document.querySelector(".home");
+   while (container.firstChild) {
+    container.removeChild(container.firstChild);
+   };
+});
 
-dog.check()
+const buttons = (function() {
+    const home = document.querySelector("#home");
+    const menu = document.querySelector("#menu");
+    const about = document.querySelector("#about");
+    const review = document.querySelector("#review");
 
+    home.addEventListener("click", () => {
+        remove();
+        main();
+    });
 
-console.log("Outside update", dog.getTest1())
+    menu.addEventListener("click", () => {
+        remove();
+    });
 
+    about.addEventListener("click", () => {
+        remove();
+    });
 
+    review.addEventListener("click", () => {
+        remove();
+    });
+})();
