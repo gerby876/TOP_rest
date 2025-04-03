@@ -2,10 +2,6 @@ import dish from "./images/maindish.jpg"
 
 const main = (function() {
     const content=document.querySelector("#content");
-    
-    const left=document.createElement("div");
-    left.classList="sidebar";
-    content.appendChild(left);
 
     const container=document.createElement("div");
     container.classList="home";
@@ -15,11 +11,26 @@ const main = (function() {
     head.textContent="A Culinary Journey to the Sea";
     container.appendChild(head);
 
+    const imgcontain = document.createElement("div")
+    imgcontain.classList="imgcontain";
+    container.appendChild(imgcontain);
+
     const maindish=document.createElement("img");
     maindish.src=dish;
     maindish.alt="An excelant looking dish.";
     maindish.classList = "maindish";
-    container.appendChild(maindish);
+    imgcontain.appendChild(maindish);
+
+    const credit=document.createElement("div");
+    const credspan = document.createElement("span");
+    const link = document.createElement("a");
+    link.setAttribute("href", `https://unsplash.com/@steven__chan?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash`)
+    link.textContent="Photo by VK bro on Unsplash";
+    credspan.appendChild(link);
+    credit.appendChild(credspan)
+
+    credit.classList="credit";
+    imgcontain.appendChild(credit);
 
     const reviews=document.createElement("h2");
     reviews.textContent="Reviews";
@@ -55,10 +66,6 @@ const main = (function() {
     "The atmosphere is cozy yet sophisticated, making it a perfect spot for any occasion."
     user3.appendChild(comment3);
     container.appendChild(review3);
-
-    const right=document.createElement("div");
-    right.classList="sidebar";
-    content.appendChild(right);
 });
 
 export {main};

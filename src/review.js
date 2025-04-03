@@ -1,9 +1,5 @@
 const reviewpage = (function() {
     const content=document.querySelector("#content");
-    
-    const left=document.createElement("div");
-    left.classList="sidebar";
-    content.appendChild(left);
 
     const container=document.createElement("div");
     container.classList="leavereview";
@@ -21,10 +17,6 @@ const reviewpage = (function() {
     submit.classList = "submit";
     submit.textContent = "Submit";
     container.appendChild(submit);
-
-    const right=document.createElement("div");
-    right.classList="sidebar";
-    content.appendChild(right);
 });
 
-export {reviewpage}
+export {reviewpage};

@@ -1,10 +1,6 @@
 const aboutpage = (function() {
     const content=document.querySelector("#content");
     
-    const left=document.createElement("div");
-    left.classList="sidebar";
-    content.appendChild(left);
-
     const container=document.createElement("div");
     container.classList="aboutpage";
     content.appendChild(container);
@@ -41,10 +37,6 @@ const aboutpage = (function() {
     p5.textContent = "Thank you for choosing The Restaurant—where seafood is more than just a meal; it’s a celebration.";
     container.appendChild(p5);
 
-
-    const right=document.createElement("div");
-    right.classList="sidebar";
-    content.appendChild(right);
 });
 
-export {aboutpage}
+export {aboutpage};

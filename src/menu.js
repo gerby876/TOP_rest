@@ -1,9 +1,5 @@
 const menupage = (function() {
     const content=document.querySelector("#content");
-    
-    const left=document.createElement("div");
-    left.classList="sidebar";
-    content.appendChild(left);
 
     const container=document.createElement("div");
     container.classList="menu";
@@ -272,17 +268,6 @@ const menupage = (function() {
     const sodapr = document.createElement("div");
     sodapr.textContent = "$2.99";
     bev5.appendChild(sodapr);
-
-
-
-
-
-
-
-
-    const right=document.createElement("div");
-    right.classList="sidebar";
-    content.appendChild(right);
 });
 
 export {menupage};

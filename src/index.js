@@ -1,11 +1,12 @@
 import "./style.css";
-
 import {main} from "./mainpage.js";
 import {menupage} from "./menu.js";
 import {aboutpage} from "./about.js";
 import{reviewpage} from "./review.js"
 
-
+const loadpage = (function() {
+    main();
+})();
 
 
 const remove = (function() {
